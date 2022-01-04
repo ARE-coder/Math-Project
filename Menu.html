@@ -1,0 +1,250 @@
+<html>
+
+<title>
+    Menu 
+</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+</head>
+<body onload="O()">
+    
+    <h1 style="text-align: center; font-family:'Cedarville Cursive', cursive;"><b><i><u>The Menu</u></i></b></h1>
+    <h1 id="N" style="text-align: center;"></h1>
+<section id="Breakfast"> <h1 style="font-family: 'Cedarville Cursive', cursive; text-align: center;">  Breakfast </h1>
+   <div class="container" id="BF">
+    <p id="P"> Classic Omelette : <p id="1">20£</p>  &nbsp; <input type="checkbox" id="one" onclick="Order1()">  </p>
+    <p id="A"> Vegetable Omelette :<p id="2"> 30£ </p> &nbsp; <input type="checkbox" id="two" onclick="Order2()">  </p>
+    <p id="R"> Spanish Omelette : <p id="3">50£</p>  &nbsp; <input type="checkbox" id="three" onclick="Order3()">  </p>
+    <p id="A"> Boiled Eggs : <p id="4">40£</p>  &nbsp; <input type="checkbox" id="four" onclick="Order4()">  </p>
+    <p id="D"> Pancakes :<p id="5"> 30£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order5()">  </p>
+    <p id="D"> fette biscottate :<p id="6"> 10£ </p> &nbsp; <input type="checkbox" id="six" onclick="Order6()">  </p>
+
+   </div>
+
+</section>
+<br>
+<section id="appetizers"> <h1 style="font-family: 'Cedarville Cursive', cursive; text-align: center;">  Appetizers </h1>
+    <div class="container" id="BF">
+     <p id="P"> French Fries : <p id="7">20£</p>  &nbsp; <input type="checkbox" id="one" onclick="Order7()">  </p>
+     <p id="A"> Mozzarella sticks : <p id="8">30£</p>  &nbsp; <input type="checkbox" id="two" onclick="Order8()">  </p>
+     <p id="R"> Spaghetti : <p id="9">40£</p>  &nbsp; <input type="checkbox" id="three" onclick="Order9()">  </p>
+     <p id="A"> Texas Chili Fries : <p id="10">50£</p>  &nbsp>; <input type="checkbox" id="four" onclick="Order10()">  </p>
+     <p id="D"> Crostini : <p id="11">10£ </p>  &nbsp; <input type="checkbox" id="five" onclick="Order11()">  </p>
+     
+ 
+    </div>
+ 
+ </section>
+ <br>
+ <section id="Pasta"> <h1 style="font-family: 'Cedarville Cursive', cursive; text-align: center;">  Pasta </h1>
+    <div class="container" id="BF">
+     <p id="P1"> Spaghetti Bolognese : <p id="12">50£</p>  &nbsp; <input type="checkbox" id="one" onclick="Order12()">  </p>
+     <p id="A1"> Penne arabiata : <p id="13">30£</p>  &nbsp; <input type="checkbox" id="two" onclick="Order13()">  </p>
+     <p id="R1"> Penne white sauce : <p id="14">35£ </p> &nbsp; <input type="checkbox" id="three" onclick="Order14()">  </p>
+     <p id="A1"> Lasagne :<p id="15"></p> 40£  &nbsp; <input type="checkbox" id="four" onclick="Order16()">  </p>
+     <p id="D1"> Cheese cream pasta :<p id="16"> 20£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order17()">  </p>
+     <p id="D1"> Tagliatelle :<p id="17"> 30£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order18()">  </p>
+    </div>
+ 
+ </section>
+ <Section id=" Pizza ">
+    <p id="P1"> Margarita pizza : <p id="18">30£</p>  &nbsp; <input type="checkbox" id="one" onclick="Order19()">  </p>
+    <p id="A1"> Vegetable Pizza : <p id="19">60£</p>  &nbsp; <input type="checkbox" id="two" onclick="Order20()">  </p>
+    <p id="R1"> Sea Runch Pizza : <p id="20">50£ </p> &nbsp; <input type="checkbox" id="three" onclick="Order21()">  </p>
+    <p id="A1"> Chicken Runch Pizza :<p id="21"></p> 40£  &nbsp; <input type="checkbox" id="four" onclick="Order22()">  </p>
+    <p id="D1"> Cheese Pizza :<p id="22"> 70£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order23()">  </p>
+    <p id="D1"> Pepperoni Pizza :<p id="23"> 75£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order24()">  </p>
+ </Section>
+
+ <section id="dessert">
+    <p id="P1"> Waffle : <p id="18">25£</p>  &nbsp; <input type="checkbox" id="one" onclick="Order19()">  </p>
+    <p id="A1"> Ice Cream : <p id="19">15£</p>  &nbsp; <input type="checkbox" id="two" onclick="Order20()">  </p>
+    <p id="R1"> Molten Cake : <p id="20">30£ </p> &nbsp; <input type="checkbox" id="three" onclick="Order21()">  </p>
+    <p id="A1"> Trimasu:<p id="21"></p> 50£  &nbsp; <input type="checkbox" id="four" onclick="Order22()">  </p>
+    <p id="D1"> cannoli :<p id="22"> 40£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order23()">  </p>
+    <p id="D1"> Cream Caramel :<p id="23"> 20£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order24()">  </p>
+
+ </section>
+ <section id="drinks">
+    <p id="P1"> Orange Juice: <p id="18">15£</p>  &nbsp; <input type="checkbox" id="one" onclick="Order19()">  </p>
+    <p id="A1"> Apple Juice : <p id="19">15£</p>  &nbsp; <input type="checkbox" id="two" onclick="Order20()">  </p>
+    <p id="R1"> Mango Juice : <p id="20">20£ </p> &nbsp; <input type="checkbox" id="three" onclick="Order21()">  </p>
+    <p id="A1"> Guava Juice:<p id="21"></p> 15£  &nbsp; <input type="checkbox" id="four" onclick="Order22()">  </p>
+    <p id="D1"> Cappuccino :<p id="22"> 30£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order23()">  </p>
+    <p id="D1"> Hot Chocolate :<p id="23"> 35£</p>  &nbsp; <input type="checkbox" id="five" onclick="Order24()">  </p>
+
+     
+ </section>
+</body>
+<style>
+    body{
+        background-color: cadetblue;
+    }
+    #BF{
+       background-color: cadetblue;
+       color:rgb(2, 29, 104);
+       font-size: 18px;
+       border: black;
+       border-style: ridge;
+       border-width:1px ;
+    }
+</style>
+<script>
+    function O()
+    {
+        var a = localStorage.getItem("First Name");
+        var b = localStorage.getItem("Last Name");
+
+        document.getElementById("N").innerHTML = "Hello " + a + "&nbsp;" + b;
+        
+    }
+
+
+
+
+    function Order1()
+    {   
+        var a = "Classic Omelette : 20£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast1",a);
+        var b = 20;
+        localStorage.setItem("Breakfast1_",b);
+    }
+    function Order2()
+    {   
+        var a = "Vegetable Omelette : 30£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast2",a);
+        localStorage.setItem("Breakfast2_",b);
+        var b = 30;
+    }
+    function Order3()
+    {   
+        var a = "Spanish Omelette : 50£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast3",a);
+        localStorage.setItem("Breakfast3_",b);
+        var b = 50;
+    }
+    function Order4()
+    {   
+        var a = "Boiled Egg : 40£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast4",a);
+        localStorage.setItem("Breakfast4_",b);
+        var b = 40;
+    }
+    function Order5()
+    {   
+        var a = "Pancake : 30£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast5",a);
+        localStorage.setItem("Breakfast5_",b);
+        var b = 30;
+    }
+    function Order6()
+    {   
+        var a = "fette biscottate : 10£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast6",a);
+        localStorage.setItem("Breakfast6_",b);
+        var b = 10;
+    }
+
+
+
+    function Order7()
+    {   
+        var a = "French Fries : 20£";
+        console.log("Appetizers - "+a);
+        localStorage.setItem("Appetizers1",a);
+    }
+    function Order8()
+    {   
+        var a = "Mozzarella Sticks : 30£";
+        console.log("Appetizers - "+a);
+        localStorage.setItem("Appetizers2",a);
+    }
+    function Order9()
+    {   
+        var a = "Spaghatti : 40£";
+        console.log("Appetizers - "+a);
+        localStorage.setItem("Appetizers3",a);
+    }
+    function Order10()
+    {   
+        var a = "Texas french fries : 40£";
+        console.log("Appetizers - "+a);
+        localStorage.setItem("Appetizers4",a);
+    }
+    function Order11()
+    {   
+        var a = "Crostini : 10£";
+        console.log("Appetizers - "+a);
+        localStorage.setItem("Appetizers5",a);
+    }
+    function Order12()
+    {   
+        var a = "Crostini : 10£";
+        console.log("Appetizers - "+a);
+        localStorage.setItem("Appetizers5",a);
+    }
+     
+
+    function Order13()
+    {   
+        var a = "Classic Omelette : 20£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast1",a);
+        var b = 20;
+        localStorage.setItem("Breakfast1_",b);
+    }
+    function Order14()
+    {   
+        var a = "Vegetable Omelette : 30£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast2",a);
+        localStorage.setItem("Breakfast2_",b);
+        var b = 30;
+    }
+    function Order15()
+    {   
+        var a = "Spanish Omelette : 50£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast3",a);
+        localStorage.setItem("Breakfast3_",b);
+        var b = 50;
+    }
+    function Order16()
+    {   
+        var a = "Boiled Egg : 40£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast4",a);
+        localStorage.setItem("Breakfast4_",b);
+        var b = 40;
+    }
+    function Order17()
+    {   
+        var a = "Pancake : 30£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast5",a);
+        localStorage.setItem("Breakfast5_",b);
+        var b = 30;
+    }
+    function Order18()
+    {   
+        var a = "fette biscottate : 10£";
+        console.log("Breakfast - "+a);
+        localStorage.setItem("Breakfast6",a);
+        localStorage.setItem("Breakfast6_",b);
+        var b = 10;
+    }
+
+    
+</script>
+</html>

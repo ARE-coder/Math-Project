@@ -1,0 +1,96 @@
+
+<html>
+    <head>
+        <title>
+            Math Project
+        </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+   </head>
+    <body>
+        <button onclick="back()" class="btn btn-danger glyphicon glyphicon-log-out"> Back </button>
+        <center>
+        <H1> LOGIN </H1>
+        <br>
+        <br>
+        <br>
+        <div id="LO">
+            <h5> Username</h5>
+            <input id="User" placeholder="Username" class="form-group" type="text"> 
+            <br><br>
+            <h5>Password</h5>
+            <input type="password" id="Pass" placeholder="Password" class="form-group">
+            <br>
+            <input type="checkbox" id="SHow" onclick="SHOW()"> Show Password
+            <br>
+            <br>
+            <button id="Submit" class="btn btn-success" onclick="Submit()"> Login </button>
+        </div>
+    </center>
+    </body>
+    <style>
+        #LO{
+            background-color: rgb(5, 148, 184);
+            color:rgb(255, 183, 0);
+            height: 500px;
+            width: 1000px;
+
+        }
+        body{
+            background-color: darkgray;
+        }
+    </style>
+    <script>
+        function Submit()
+        {
+            var a = document.getElementById("User").value;
+            var b = document.getElementById("Pass").value;
+            var c = localStorage.getItem("Username");
+            var d = localStorage.getItem("Password");
+            if (c == undefined && d == undefined)
+            {
+                window.alert("You don't have an account\n Please create an account\n Thank you");
+                document.getElementById("hh").style.border = "red";
+                document.getElementById("hh").style.borderWidth = 10;
+
+                
+            }else if (a != c || b != d )  
+            {
+                window.alert("Incorrect,\n The Username or password is incorrect, Please try again\n Thank you");
+                document.getElementById("User").style.border = "red";
+                document.getElementById("Pass").style.border = "red";
+            } else if (a == null && b == null) {
+                window.alert("This is required");
+                document.getElementById("User").style.border = "red";
+                document.getElementById("Pass").style.border = "red";
+                document.getElementById("User").placeholder = "reqiured";
+                document.getElementById("Pass").placeholder = "reqiured";
+            }else if(a == c && b == d )
+            {
+                window.location = "Menu.html"
+            }
+
+            
+        }
+        function SHOW()
+        {
+            var a = document.getElementById("Pass");
+            if (a.type === "password") {
+         a.type = "text";
+         } else {
+          a.type = "password";
+          }
+            
+        }
+        function back()
+        {
+            window.location = "index.html";
+        }
+    </script>
+
+        </html>

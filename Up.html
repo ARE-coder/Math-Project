@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title> 
+            Math Project
+        </title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <button class="glyphicon glyphicon-log-out btn btn-danger" onclick="back()"> Back </button>
+        <center>
+            <h1> Create an account </h1>
+            <div class="container" id="CA">
+                <h3> First Name </h3>
+                <input class="form-group" placeholder="First Name" id="FN" type="text" >
+                <br>
+                
+                <h3> Last Name </h3>
+                <input class="form-group" placeholder="Last Name" id="LN" type="text" >
+                <br>
+                
+
+                <h3> Username: </h3>
+                <input class="form-group" placeholder="Username" id="User" type="Text" >
+                <br>
+                <h3> Password :</h3>
+                <input class="form-group" placeholder="Password" id="Pass" type="password">
+                <br>
+                <input class="form-group"  id="sh" type="checkbox" onclick="SHOW()"> Show Password
+                <br>
+                <br>
+                <button onclick="submit()" class="btn btn-success"> Submit </button>
+                
+
+
+            </div>
+        </center>
+    </body>
+    <style>
+         #CA{
+             background-color: darkcyan;
+             color: darkred;
+         }
+    </style>
+    <script>
+        var a = document.getElementById("FN").value;
+        var b = document.getElementById("LN").value;
+        var c = document.getElementById("User").value;
+        var d = document.getElementById("Pass").value;
+         
+        function SHOW()
+        {
+            var x = document.getElementById("Pass");
+            if ( x.type === "password")
+            {
+                x.type = "text"
+            }else{
+                x.type = "password"
+            }
+        }
+        function submit()
+        {
+            var a = document.getElementById("FN").value;
+            var b = document.getElementById("LN").value;
+            var c = document.getElementById("User").value;
+            var d = document.getElementById("Pass").value;
+            console.log("First Name: " + a);
+            console.log("Last Name:  " + b);
+            console.log("Username: " + c);
+            console.log("Password: " + d);
+
+            localStorage.setItem("First Name",a);
+            localStorage.setItem("Last Name",b);
+            localStorage.setItem("Username",c);
+            localStorage.setItem("Password",d);
+
+            window.location = "Login.html";
+        }
+        function back()
+        {
+            
+        }
+        
+
+    </script>
+</html>
